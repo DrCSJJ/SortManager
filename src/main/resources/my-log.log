@@ -1,0 +1,10 @@
+2022-10-19 bubbleSortArray INFO Method has started
+2022-10-19 bubbleSortArray INFO This is the unsorted array: [1382403750, 229670599, 1362804952, -1100109558, 661865175]
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 sortBubble FINEST Bubble swap occurred
+2022-10-19 bubbleSortArray FINE Sorted array is: [-1100109558, 229670599, 661865175, 1362804952, 1382403750]
