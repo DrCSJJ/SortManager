@@ -1,7 +1,10 @@
 package com.sparta.cj.mergesort;
 
-public class MergeSort {
-    public static int[] mergeSortSplit(int[] array){
+import com.sparta.cj.factory.Sortable;
+
+public class MergeSort implements Sortable {
+    @Override
+    public int[] sort(int[] array){
 
         int arrayLength = array.length;
         if (arrayLength < 2) {
@@ -19,8 +22,8 @@ public class MergeSort {
         for(int rCounter = midPointArray; rCounter < arrayLength; rCounter++){
             rightArr[rCounter-midPointArray] = array[rCounter];
         }
-        mergeSortSplit(leftArr);
-        mergeSortSplit(rightArr);
+        sort(leftArr);
+        sort(rightArr);
 
         arrayFinal = mergeSortCombine(array, leftArr,rightArr, midPointArray, arrayLength-midPointArray);
         return arrayFinal;

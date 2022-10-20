@@ -1,6 +1,7 @@
 package com.sparta.cj.start;
 
 import com.sparta.cj.bubblesort.BubbleSort;
+import com.sparta.cj.factory.SortFactoryManager;
 
 import java.util.Random;
 
@@ -10,15 +11,6 @@ import java.util.Random;
  */
 public class App {
     public static void main(String[] args) {
-//        SortScanner sortScanner = new SortScanner();
-//        sortScanner.scannerEntry();
-
-        Random rd = new Random();
-        int[] array = new int[5];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = rd.nextInt();
-
-        }
-        BubbleSort.bubbleSortArray(array);
+        SortFactoryManager.userInterface();
     }
 }

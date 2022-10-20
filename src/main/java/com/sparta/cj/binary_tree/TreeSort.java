@@ -28,6 +28,30 @@ public class TreeSort {
         }
     }
 
+    public String getSortedArrayAsc(StringBuilder stringBuilder){
+        String string;
+        return string = getSortedArrayAscRecursion(rootNode, stringBuilder);
+    }
+
+    private String getSortedArrayAscRecursion(Node node, StringBuilder stringBuilder){
+        if(node == null){
+            return null;
+        }
+        getSortedArrayAscRecursion(node.getLeftChild(),stringBuilder);
+
+        stringBuilder.append( node.getValue() + " ");
+
+        getSortedArrayAscRecursion(node.getRightChild(), stringBuilder);
+        return stringBuilder.toString();
+    }
+
+    public int getNumberOfElements(Node rootNode){
+        if(rootNode == null){
+            return 0;
+        }
+        return 1 + getNumberOfElements(rootNode.getLeftChild()) + getNumberOfElements(rootNode.getRightChild());
+    }
+
     public boolean findElement(int element){
         Node node = findNode(element);
         if (node != null){
