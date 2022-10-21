@@ -3,9 +3,9 @@ Sort Manager for several sorts I have created it. It generates a random array wi
 taken and teh sorted array. 
 
 ## Sorters Used
-*Bubblesort
-*Binarysort
-*Mergesort
+* Bubblesort
+* Binarysort
+* Mergesort
 
 ## Design
 It uses a basic Factory design pattern to structure my sorting algorithms. I have tried to mantain the SOLID principles of object orientated program by providing single responsilbilty for classes, creating an MVC desgin pattern and 
