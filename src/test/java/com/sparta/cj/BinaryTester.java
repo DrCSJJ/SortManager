@@ -7,14 +7,15 @@ import org.junit.jupiter.api.*;
 import java.util.Arrays;
 import java.util.Random;
 
-public class MergeSortTester {
+public class BinaryTester {
+
 
     private static Sortable sortable;
     private int[] unsortedArray;
 
     @BeforeAll
     public static void setSorter(){
-        sortable = SortFactory.getSort(3);
+        sortable = SortFactory.getSort(2);
     }
 
     @BeforeEach
@@ -51,10 +52,11 @@ public class MergeSortTester {
     void CheckThatThisBlankArrayDoesNotBreakCode() {
         Assertions.assertArrayEquals((new int[]{}), (sortable.sort(new int[]{})));
     }
+
     @Test
     @DisplayName("Check that this single number array does not break my code")
     void CheckThatThisSingleNumberArrayDoesNotBreakCode() {
         Assertions.assertArrayEquals((new int[]{1}), (sortable.sort(new int[]{1})));
     }
-
 }
+

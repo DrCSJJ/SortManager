@@ -1,16 +1,14 @@
 package com.sparta.cj.start;
 
-import com.sparta.cj.bubblesort.BubbleSort;
 import com.sparta.cj.factory.SortFactoryManager;
+import com.sparta.cj.logging.CustomLoggerConfiguration;
 
-import java.util.Random;
+import java.util.logging.Logger;
 
-/**
- * Hello world!
- *
- */
 public class App {
+    private static final Logger logger = Logger.getLogger("SortManagerLogger");
     public static void main(String[] args) {
+        CustomLoggerConfiguration.configureLogger(logger);
         SortFactoryManager.userInterface();
     }
 }

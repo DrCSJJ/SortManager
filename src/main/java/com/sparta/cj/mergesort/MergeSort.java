@@ -1,8 +1,16 @@
 package com.sparta.cj.mergesort;
 
 import com.sparta.cj.factory.Sortable;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class MergeSort implements Sortable {
+    private static final Logger logger = Logger.getLogger("SortManagerLogger");
+
+    static {
+        logger.log(Level.INFO, "Method has started");
+    }
+
     @Override
     public int[] sort(int[] array){
 
@@ -12,7 +20,7 @@ public class MergeSort implements Sortable {
         }
 
         int midPointArray = arrayLength/2;
-        int arrayFinal[] = new int[arrayLength];
+        int[] arrayFinal;
         int[] leftArr = new int[midPointArray];
         int[] rightArr = new int[arrayLength-midPointArray];
 
@@ -22,6 +30,7 @@ public class MergeSort implements Sortable {
         for(int rCounter = midPointArray; rCounter < arrayLength; rCounter++){
             rightArr[rCounter-midPointArray] = array[rCounter];
         }
+
         sort(leftArr);
         sort(rightArr);
 

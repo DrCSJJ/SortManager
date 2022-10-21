@@ -4,11 +4,16 @@ import com.sparta.cj.display.DisplayLoader;
 import com.sparta.cj.start.Utils;
 
 public class SortFactoryManager {
+
     public static void userInterface(){
         int whichSort;
         int arraySize;
         int[] unSortedArray;
         int[] sortedArray;
+        long startTime = 0;
+        long endTime = 0;
+        long elapsedTime =0;
+
 
         whichSort = userQueryWhichSort();
         arraySize =  userQueryWhatSizeArray();
@@ -17,10 +22,23 @@ public class SortFactoryManager {
         printWhatSortToDisplay(whichSort);
         DisplayLoader.printOriginalArray(unSortedArray);
 
+        if(whichSort == 3) {
+            startTime = Utils.getNanoTime();
+        }
         Sortable sortable = SortFactory.getSort(whichSort);
         sortedArray = sortable.sort(unSortedArray);
+
+
+        if(whichSort == 3) {
+            endTime = Utils.getNanoTime();
+            elapsedTime = endTime - startTime;
+            DisplayLoader.printMicroTime(elapsedTime);
+        }
+
         DisplayLoader.printSortedArray(sortedArray);
     }
+
+
 
     private static void printWhatSortToDisplay(int whichSort) {
         switch (whichSort){

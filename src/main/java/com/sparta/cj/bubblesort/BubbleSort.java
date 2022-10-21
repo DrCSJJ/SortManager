@@ -1,23 +1,25 @@
 package com.sparta.cj.bubblesort;
 
+import com.sparta.cj.display.DisplayLoader;
 import com.sparta.cj.factory.Sortable;
-import com.sparta.cj.logging.CustomLoggerConfiguration;
-
-import java.util.Arrays;
+import com.sparta.cj.start.Utils;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BubbleSort implements Sortable {
-    private static final Logger logger = Logger.getLogger("BubbleSort-Logger");
+    private static final Logger logger = Logger.getLogger("SortManagerLogger");
+
+    static {
+        logger.log(Level.INFO, "Method has started");
+    }
 
     @Override
     public int[] sort(int[] array) {
-        CustomLoggerConfiguration.configureLogger(logger);
         boolean sorted = false;
         int count = 0;
-
-        logger.log(Level.INFO, "Method has started");
-        logger.log(Level.INFO, "This is the unsorted array: " + Arrays.toString(array));
+        long endTime;
+        long elapsedTime;
+        long startTime = Utils.getNanoTime();
 
         if (array.length == 0) {
             logger.log(Level.FINE, "Array is empty");
@@ -26,7 +28,14 @@ public class BubbleSort implements Sortable {
             logger.log(Level.FINE, "Single item array");
             return array;
         } else isSorted(array, sorted, count);
-        logger.log(Level.FINE, "Sorted array is: " + Arrays.toString(array));
+        logger.log(Level.FINE, "Returning sorted array");
+
+
+        endTime = Utils.getNanoTime();
+        elapsedTime  = endTime - startTime;
+        DisplayLoader.printMicroTime(elapsedTime);
+
+
         return array;
     }
 
@@ -50,7 +59,7 @@ public class BubbleSort implements Sortable {
         temp = unsorted[i];
         unsorted[i] = unsorted[i + 1];
         unsorted[i + 1] = temp;
-        logger.log(Level.FINEST, "Bubble swap occurred");
+
         return false;
     }
 }

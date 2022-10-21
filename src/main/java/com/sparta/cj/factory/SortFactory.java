@@ -4,7 +4,6 @@ import com.sparta.cj.binary_tree.BinarySearch;
 import com.sparta.cj.bubblesort.BubbleSort;
 import com.sparta.cj.mergesort.MergeSort;
 
-
 public class SortFactory {
     public static Sortable getSort(int choice) {
         return switch (choice) {

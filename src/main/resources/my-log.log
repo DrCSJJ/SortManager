@@ -1,64 +1,13 @@
-2022-10-19 bubbleSortArray INFO Method has started
-2022-10-19 bubbleSortArray INFO This is the unsorted array: [1382403750, 229670599, 1362804952, -1100109558, 661865175]
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 sortBubble FINEST Bubble swap occurred
-2022-10-19 bubbleSortArray FINE Sorted array is: [-1100109558, 229670599, 661865175, 1362804952, 1382403750]
-2022-10-20 sort INFO Method has started
-2022-10-20 sort INFO This is the unsorted array: []
-2022-10-20 sort FINE Array is empty
-2022-10-20 sort INFO Method has started
-2022-10-20 sort INFO This is the unsorted array: [6, 5, 4, 3, 2, 1]
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sort FINE Sorted array is: [1, 2, 3, 4, 5, 6]
-2022-10-20 sort INFO Method has started
-2022-10-20 sort INFO This is the unsorted array: [1]
-2022-10-20 sort FINE Single item array
-2022-10-20 sort INFO Method has started
-2022-10-20 sort INFO This is the unsorted array: [1, 2, 3, 4, 5, 6]
-2022-10-20 sort FINE Sorted array is: [1, 2, 3, 4, 5, 6]
-2022-10-20 sort INFO Method has started
-2022-10-20 sort INFO This is the unsorted array: [-543036649, -2104858187, 1011311398, 1604841258, -986559305, -1642051068, -484406620, -616979318, 670473411, -1725350929]
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sortBubble FINEST Bubble swap occurred
-2022-10-20 sort FINE Sorted array is: [-2104858187, -1725350929, -1642051068, -986559305, -616979318, -543036649, -484406620, 670473411, 1011311398, 1604841258]
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort INFO Method has started
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort FINE Returning sorted array
+2022-10-21 com.sparta.cj.mergesort.MergeSort INFO Method has started
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort INFO Method has started
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort FINE Returning sorted array
+2022-10-21 com.sparta.cj.binary_tree.BinarySearch INFO Method has started
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort INFO Method has started
+2022-10-21 com.sparta.cj.bubblesort.BubbleSort FINE Returning sorted array
+2022-10-21 com.sparta.cj.mergesort.MergeSort INFO Method has started
+2022-10-21 com.sparta.cj.binary_tree.BinarySearch INFO Method has started
+2022-10-21 com.sparta.cj.mergesort.MergeSort INFO Method has started
+2022-10-21 com.sparta.cj.mergesort.MergeSort INFO Method has started
+2022-10-21 com.sparta.cj.binary_tree.BinarySearch INFO Method has started

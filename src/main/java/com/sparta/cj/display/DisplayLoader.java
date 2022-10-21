@@ -1,14 +1,9 @@
 package com.sparta.cj.display;
 
+import com.sparta.cj.factory.SortFactoryManager;
+import java.util.Arrays;
+
 public class DisplayLoader {
-    public static void DisplayLoader() {
-//        printQuestionWhichSort();
-//        printQuestionArraySize(String string);
-
-
-
-    }
-
     public static void printQuestionArraySize() {
         System.out.println("Pleas Select the array Length (Max 1000 Min 1) ");
     }
@@ -22,9 +17,7 @@ public class DisplayLoader {
 
     public static void printOriginalArray(int[] array){
         System.out.println("Original array is:");
-        for (int i = 0;  i< array.length; i++){
-            System.out.println(array[i] + " ");
-        }
+        System.out.println(Arrays.toString(array));
     }
     public static void printArraySortUsed(String string){
         System.out.println("The array sort used was: " + string);
@@ -32,8 +25,11 @@ public class DisplayLoader {
 
     public static void printSortedArray(int[] array){
         System.out.println("Sorted array is: ");
-        for (int i = 0;  i< array.length; i++){
-            System.out.println(array[i] + " ");
-        }
+        System.out.println(Arrays.toString(array));
+        SortFactoryManager.userInterface();
+    }
+
+    public static void printMicroTime(long microTime){
+        System.out.println("Time Taken to Execute (MicroSeconds) : " + microTime/1000 + "µs");
     }
 }
